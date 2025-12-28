@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Classic Fun!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🐍 Snake Game</h1>
+            <div class="score-board">
+                <div class="score">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="high-score">
+                    <span class="label">High Score:</span>
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            <div id="gameOver" class="game-over hidden">
+                <h2>Game Over!</h2>
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Play Again</button>
+            </div>
+            <div id="startScreen" class="start-screen">
+                <h2>Ready to Play?</h2>
+                <p>Use arrow keys or WASD to control</p>
+                <button id="startBtn">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-buttons">
+                <button class="control-btn" data-direction="up">↑</button>
+                <div class="middle-row">
+                    <button class="control-btn" data-direction="left">←</button>
+                    <button class="control-btn" data-direction="down">↓</button>
+                    <button class="control-btn" data-direction="right">→</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <p>Use <kbd>Arrow Keys</kbd> or <kbd>WASD</kbd> to move</p>
+            <p>Eat the food to grow and increase your score!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
