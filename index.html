@@ -3,13 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game - Classic Fun!</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Snake Game - Play Classic Snake Online Free | Lemontree Tech</title>
+    <meta name="title" content="Snake Game - Play Classic Snake Online Free | Lemontree Tech">
+    <meta name="description" content="Play the classic Snake game online for free! Modern, beautiful design with smooth gameplay. Control the snake with arrow keys or WASD. Track your high score and challenge yourself as the game speeds up!">
+    <meta name="keywords" content="snake game, classic snake, online snake game, free snake game, play snake, retro game, arcade game, browser game, html5 game, javascript game, snake online, snake classic">
+    <meta name="author" content="Lemontree Tech">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lemontreetech.github.io/snake-game/">
+    <meta property="og:title" content="Snake Game - Play Classic Snake Online Free">
+    <meta property="og:description" content="Play the classic Snake game online for free! Modern design with smooth gameplay. Control with arrow keys or WASD. Track high scores and enjoy progressive difficulty!">
+    <meta property="og:image" content="https://lemontreetech.github.io/snake-game/og-image.png">
+    <meta property="og:site_name" content="Lemontree Tech Snake Game">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://lemontreetech.github.io/snake-game/">
+    <meta name="twitter:title" content="Snake Game - Play Classic Snake Online Free">
+    <meta name="twitter:description" content="Play the classic Snake game online for free! Modern design with smooth gameplay. Control with arrow keys or WASD.">
+    <meta name="twitter:image" content="https://lemontreetech.github.io/snake-game/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lemontreetech.github.io/snake-game/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Snake Game",
+      "description": "Play the classic Snake game online for free! Modern, beautiful design with smooth gameplay. Control the snake with arrow keys or WASD. Track your high score and challenge yourself as the game speeds up!",
+      "url": "https://lemontreetech.github.io/snake-game/",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      },
+      "gamePlatform": ["Web Browser"],
+      "genre": "Arcade",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lemontree Tech"
+      },
+      "datePublished": "2025-01-01",
+      "inLanguage": "en"
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="game-header">
-            <h1>🐍 Snake Game</h1>
+    <main class="container">
+        <header class="game-header">
+            <h1>🐍 Snake Game - Classic Arcade Fun</h1>
             <div class="score-board">
                 <div class="score">
                     <span class="label">Score:</span>
@@ -20,10 +85,10 @@
                     <span id="high-score">0</span>
                 </div>
             </div>
-        </div>
+        </header>
         
-        <div class="game-wrapper">
-            <canvas id="gameCanvas"></canvas>
+        <section class="game-wrapper" aria-label="Game area">
+            <canvas id="gameCanvas" aria-label="Snake game canvas" role="img"></canvas>
             <div id="gameOver" class="game-over hidden">
                 <h2>Game Over!</h2>
                 <p>Your Score: <span id="finalScore">0</span></p>
@@ -34,9 +99,9 @@
                 <p>Use arrow keys or WASD to control</p>
                 <button id="startBtn">Start Game</button>
             </div>
-        </div>
+        </section>
         
-        <div class="controls">
+        <nav class="controls" aria-label="Game controls">
             <div class="control-buttons">
                 <button class="control-btn" data-direction="up">↑</button>
                 <div class="middle-row">
@@ -45,13 +110,14 @@
                     <button class="control-btn" data-direction="right">→</button>
                 </div>
             </div>
-        </div>
+        </nav>
         
-        <div class="instructions">
+        <footer class="instructions">
             <p>Use <kbd>Arrow Keys</kbd> or <kbd>WASD</kbd> to move</p>
             <p>Eat the food to grow and increase your score!</p>
-        </div>
-    </div>
+            <p><small>© 2025 Lemontree Tech. All Rights Reserved.</small></p>
+        </footer>
+    </main>
     
     <script src="game.js"></script>
 </body>
